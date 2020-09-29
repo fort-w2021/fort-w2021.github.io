@@ -2,11 +2,7 @@
 
 Willkommen zum Kurs. Es wird großartig!
 
-
-
-
-Reguläre Präsenzzeiten:  
-Donnerstag & Freitag, 14:00-16:00 via [Zoom](https://lmu-munich.zoom.us/j/99114970258?pwd=YTFhdTR5V2RvanFheGpiTm1SSTlMZz09)
+Wir trefffen uns jeden Donnerstag & Freitag, 14:00-16:00 via [Zoom](https://lmu-munich.zoom.us/j/99114970258?pwd=YTFhdTR5V2RvanFheGpiTm1SSTlMZz09)
 
 ------------------- 
 
@@ -63,7 +59,6 @@ Programmentwurf
 
 [Material](week2.html)
 
-
 -------------------
 
 ##  Woche 3 (16. - 22.11.)
@@ -99,9 +94,10 @@ Debugging - Performance
 - [Half-Space Mass](ex/topdown-halfspacemass-ex.html){:target="_blank"}
 (s. repository `halfspacemass-ex-<XXX>`)
 
+<!--
 -------------------
 
-##   TEIL II (Januar/Februar)**
+##   TEIL II (Januar/Februar)
 
 -------------------
 
@@ -130,4 +126,4 @@ Metaprogramming: Expressions, Calls, Non-Standard Evaluation
 Objektorientierte Programmierung: R6
 
 [Material](week14.html)
-
+-->
