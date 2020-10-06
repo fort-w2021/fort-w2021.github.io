@@ -15,7 +15,7 @@ Bitte lesen Sie sich bereits **im Vorfeld** das [hier](slides/intro-orga.html){:
 Bitte bereiten Sie sich unbedingt auf den ersten Präsenztermin vor, indem Sie **vor** dem ersten Termin:
 
 - einen Github Account anlegen
-- Ihre Github Info [hier](https://forms.gle/yDZEg239hjeyEdzt7){:target="_blank"} eintragen -- sonst kommen Sie nicht an die Übungsaufgaben.
+- Ihre Github Info [hier](https://forms.gle/tz8j3HoXgS2FZyB2A){:target="_blank"} eintragen -- sonst kommen Sie nicht an die Übungsaufgaben.
 - die dann von mir bei Ihnen eintreffende Einladung zur Kursorganisation auf Github annehmen
 - Ihre Maschine fit machen: [Genaue Instruktionen](ex/setup-ex.html){:target="_blank"}
 
