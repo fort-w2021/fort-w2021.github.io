@@ -6,6 +6,11 @@ title: Woche 3
 
 **Lesen/Anschauen:**
 
+Diese Woche mehr zum Lesen und Verstehen als reinen Code zu schreiben.
+Einigermaßen gutes Verständnis dieser theoretischen Aspekte ist vor allem auch 
+wichtig um in der Folge das für die Praxis enorm wichtige Thema "Debugging" gut 
+zu beherrschen.
+
 - Funktionen
   - Intro [slides](slides/functions-intro.html){:target="_blank"}
   - Struktur [slides](slides/functions-structure.html){:target="_blank"}
