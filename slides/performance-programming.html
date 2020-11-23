@@ -1353,6 +1353,11 @@ opacity: 0;
 }
 @media print {
 
+@page {
+size: landscape;
+margin: 0;
+}
+
 slides slide {
 display: block !important;
 position: relative;
@@ -3100,6 +3105,76 @@ slide:not(.current) .plotly.html-widget{
   display: block;
 }
 
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+            code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode { white-space: pre; position: relative; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    code.sourceCode { white-space: pre-wrap; }
+    code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+        
   </style>
 
   <style type="text/css">pre {
@@ -3152,7 +3227,7 @@ color: white;
         <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
     <hgroup class="auto-fadein">
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
-      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      
       <p data-config-presenter><!-- populated from slide_config.json --></p>
           </hgroup>
   </slide>
@@ -3172,13 +3247,13 @@ color: white;
 
 <p>Oft ein <em>trade-off</em>: Schnellere Algorithmen brauchen evtl mehr Speicher und umgekehrt.</p>
 
-</article></slide><slide class=""><hgroup><h2>Strategien für bessere Performance</h2></hgroup><article  id="strategien-fur-bessere-performance">
+</article></slide><slide class=""><hgroup><h2>Strategien für bessere Performance</h2></hgroup><article  id="strategien-für-bessere-performance">
 
 <p>Lokal:</p>
 
 <p>Verwende ein optimiertes BLAS/LAPACK für Vektor/Matrixoperationen statt dem Standard. Das kann z.B. Matrix-Multiplikationen bis zu 30-mal schneller machen. Siehe D. Eddelbuettel ’s <a href='http://dirk.eddelbuettel.com/papers/gcbd.pdf' title=''>white paper</a> oder auch Brett Klamer’s <a href='http://brettklamer.com/diversions/statistical/faster-blas-in-r/' title=''>blog</a>.</p>
 
-</article></slide><slide class=""><hgroup><h2>Strategien für bessere Performance</h2></hgroup><article  id="strategien-fur-bessere-performance-1">
+</article></slide><slide class=""><hgroup><h2>Strategien für bessere Performance</h2></hgroup><article  id="strategien-für-bessere-performance-1">
 
 <ul>
 <li>Verwende Pakete statt eigene Implementationen:
@@ -3242,10 +3317,51 @@ bench::mark(
 <pre >## # A tibble: 4 x 6
 ##   expression   min median `itr/sec` mem_alloc `gc/sec`
 ##   &lt;bch:expr&gt; &lt;dbl&gt;  &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
-## 1 dumb       20.2   17.6       1        30.1      4.80
-## 2 smart       2.84   2.50      7.50      1.80     1.32
-## 3 kronecker   4.39   5.40      3.58      2.12     1   
-## 4 built_in    1      1        17.4       1        1.97</pre>
+## 1 dumb        9.15   8.93      1        30.2      4.48
+## 2 smart       1      1         9.64      1.80     1.55
+## 3 kronecker   2.33   2.32      3.77      2.12     1   
+## 4 built_in    1.01   1.19      8.14      1        1.05</pre>
+
+</article></slide><slide class=""><hgroup><h2>Kopien &amp; <em>pre-allocation</em>: Technische Details</h2></hgroup><article  id="kopien-pre-allocation-technische-details">
+
+<pre class = 'prettyprint lang-r'>dim &lt;- 1000; reps &lt;- 1000
+l &lt;- list(); l_2 &lt;- list(); l_pre &lt;- vector(&quot;list&quot;, reps)
+m &lt;- matrix(NA_real_, dim, 1); m_r &lt;- matrix(NA_real_, 1, dim)
+m_pre &lt;- matrix(NA_real_, dim, reps); m_r_pre &lt;- matrix(NA_real_, reps, dim)
+x &lt;- 1:dim
+bench::mark(
+  c        = { for (i in seq_len(reps)) l            &lt;- c(l, x + i) },
+  `[[ new` = { for (i in seq_len(reps)) l_2[[i]]     &lt;- x + i },
+  `[[`     = { for (i in seq_len(reps)) l_pre[[i]]   &lt;- x + i },
+  cbind    = { for (i in seq_len(reps)) m            &lt;- cbind(m, x + i) },
+  rbind    = { for (i in seq_len(reps)) m_r          &lt;- rbind(m, x + i) },
+  `[,i]`   = { for (i in seq_len(reps)) m_pre[, i]   &lt;- x + i },
+  `[i,]`   = { for (i in seq_len(reps)) m_r_pre[i, ] &lt;- x + i }
+)</pre>
+
+<pre >## # A tibble: 7 x 6
+##   expression      min   median `itr/sec` mem_alloc `gc/sec`
+##   &lt;bch:expr&gt; &lt;bch:tm&gt; &lt;bch:tm&gt;     &lt;dbl&gt; &lt;bch:byt&gt;    &lt;dbl&gt;
+## 1 c            28.78s   28.78s    0.0347    3.74GB     8.23
+## 2 [[ new       4.12ms   5.52ms  130.        4.25MB     7.88
+## 3 [[           3.98ms   4.75ms  199.        3.88MB    12.0 
+## 4 cbind         4.16s    4.16s    0.241     3.74GB    54.8 
+## 5 rbind        27.87s   27.87s    0.0359    7.47GB     9.76
+## 6 [,i]         6.75ms   7.64ms  124.       15.38MB    12.0 
+## 7 [i,]         9.75ms  11.55ms   86.5      15.37MB     7.87</pre>
+
+</article></slide><slide class=""><hgroup><h2>Technische Details &amp; Moral von der Geschicht</h2></hgroup><article  id="technische-details-moral-von-der-geschicht">
+
+<ul>
+<li><em>pre-allocation</em> v.a. wichtig für Vektoren, Arrays.</li>
+<li>Zuweisungen mit <code>c()</code> lösen <em>immer</em> einen Kopiervorgang aus, wenn Listen sequenziell vergrößert werden müssen also wesentlich effizienter mit <code>[[&lt;-</code>.</li>
+<li>zeilenweises sequenzielles Vergrößern von Matrizen ist nochmal viel schlimmer als spaltenweises, weil Matrizen intern &ldquo;column-wise&rdquo; als langer Vektor mit einem <code>dim</code>-Attribut abgespeichert sind:
+
+<ul>
+<li>Wenn eine neue <em>Spalte</em> angefügt wird muss also nur an den Vektor hinten was drangehängt werden und das <code>dim</code>-Attribut geändert werden.</li>
+<li>Wenn eine neue <em>Zeile</em> angefügt wird muss dagegen dieser Zeilenvektor irgendwo in der Mitte des abgespeicherten Vektors reingeflanscht werden, das ist natürlich extra teuer weil damit die allermeisten Elemente des intern abgespeicherten Vektors ihre Position im Vektor verändern müssen.</li>
+</ul></li>
+</ul>
 
 </article></slide><slide class=""><hgroup><h2>Vektorisierung</h2></hgroup><article  id="vektorisierung">
 
@@ -3281,9 +3397,9 @@ bench::mark(
 <pre >## # A tibble: 3 x 6
 ##   expression               min median `itr/sec` mem_alloc `gc/sec`
 ##   &lt;bch:expr&gt;             &lt;dbl&gt;  &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
-## 1 for_loop                30.2   29.2      1.03      2.40     17.4
-## 2 vapply_vectorization    30.8   30.5      1         1        21.6
-## 3 r_internals_vectorized   1      1       30.0       2         1</pre></article></slide>
+## 1 for_loop                26.2   26.2      1         2.40     23.3
+## 2 vapply_vectorization    26.1   26.0      1.00      1        23.5
+## 3 r_internals_vectorized   1      1       25.9       2         1</pre></article></slide>
 
 
   <slide class="backdrop"></slide>

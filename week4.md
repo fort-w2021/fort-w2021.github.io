@@ -17,6 +17,8 @@ title: Woche 4
   - Profiling [slides](slides/performance-profiling.html){:target="_blank"}
   - Effizientes Programmieren [slides](slides/performance-programming.html){:target="_blank"}
   - Parallelisierung [slides](slides/performance-parallel.html){:target="_blank"} [Lektüre](ex/parallel-reading-ex.html){:target="_blank"}
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLMyWaJl2LoXz15dZUIlj-PuUZV1IbW3Ch" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
   
 **Machen:**
 
