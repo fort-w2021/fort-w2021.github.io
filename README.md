@@ -78,22 +78,11 @@ Debugging - Performance
 
 -------------------
 
-## Woche 5/6 (30.11. - 13.12.)
+## Woche 5 - 8 (30.11.2020 - 08.01.2021)
 
-Übung, Vertiefung, Nachbereitung/Peer Reviews - kein neuer Stoff.
+Übung, Vertiefung, Nachbereitung - kein neuer Stoff.
 
-[Material](week56.html)
-
--------------------
-
-## Woche 7/8 (14.12.2020 - 08.01.2021)
-
-Übung, Vertiefung, Nachbereitung/Peer Reviews - kein neuer Stoff.
-
-**Machen:**
-
-- [Half-Space Mass](ex/topdown-halfspacemass-ex.html){:target="_blank"}
-(s. repository `halfspacemass-ex-<XXX>`)
+[Material](week5678.html)
 
 <!--
 -------------------
@@ -105,8 +94,6 @@ Debugging - Performance
 ## Woche 9/10 (11.01. - 24.01.)
 
 Objektorientierte Programmierung: S3 & S4
-
-**Präsenzzeiten am 13. und 20.12. entfallen.**
 
 [Material](week910.html)
 
