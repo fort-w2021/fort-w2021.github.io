@@ -1353,6 +1353,11 @@ opacity: 0;
 }
 @media print {
 
+@page {
+size: landscape;
+margin: 0;
+}
+
 slides slide {
 display: block !important;
 position: relative;
@@ -3100,6 +3105,13 @@ slide:not(.current) .plotly.html-widget{
   display: block;
 }
 
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+            
   </style>
 
   <style type="text/css">pre {
@@ -3152,14 +3164,14 @@ color: white;
         <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
     <hgroup class="auto-fadein">
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
-      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      
       <p data-config-presenter><!-- populated from slide_config.json --></p>
           </hgroup>
   </slide>
 
 <slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2><code>DESCRIPTION</code></h2></hgroup><article  id="description">
 
-</article></slide><slide class=""><hgroup><h2><code>DESCRIPTION</code></h2></hgroup><article  id="description-1" class="smaller">
+</article></slide><slide class=""><hgroup><h2><code>DESCRIPTION</code></h2></hgroup><article  class="smaller" id="description-1">
 
 <pre >Package: pamm  
 Title: Functions and Utilities for fitting Piece-wise Exponential (Additive) models  
@@ -3200,9 +3212,9 @@ VignetteBuilder: knitr  </pre>
 <p>Optional:</p>
 
 <ul>
-<li><code>Depends</code>, <code>Suggests</code>, <code>Imports</code>, <code>Enhances</code>: Paketabhängigkeiten</li>
-<li><code>URL</code>: für die Website des Pakets</li>
-<li><code>BugReports</code>: URL für bug reports</li>
+<li><p><code>Depends</code>, <code>Suggests</code>, <code>Imports</code>, <code>Enhances</code>: Paketabhängigkeiten</p></li>
+<li><p><code>URL</code>: für die Website des Pakets</p></li>
+<li><p><code>BugReports</code>: URL für bug reports</p></li>
 <li><p><code>Collate</code>: Ordnung in der die <code>/R</code>-Files eingelesen werden (default: alphabetisch). Wird im Hadleyverse automagisch erstellt.</p></li>
 <li><p>erzeugen zB mit <code>usethis::use_description()</code></p></li>
 </ul>
@@ -3239,7 +3251,7 @@ VignetteBuilder: knitr  </pre>
 
 <p>Version <code>1.0.0</code> definiert die erste Version der öffentlich zugänglichen Benutzeroberfläche des Pakets &amp; ein impliziertes Versprechen an User*innen diese zukünftig nicht leichtfertig zu verändern.</p>
 
-</article></slide><slide class=""><hgroup><h2>Abhängigkeiten &amp; Exporte</h2></hgroup><article  id="abhangigkeiten-exporte">
+</article></slide><slide class=""><hgroup><h2>Abhängigkeiten &amp; Exporte</h2></hgroup><article  id="abhängigkeiten-exporte">
 
 <ul>
 <li><code>Imports</code> listet die fremden Pakete, deren Funktionen aus den <em>evaluation environments</em> der Funktionen des eigenen Pakets sichtbar sein sollen (also: die von den Funktionen des eigenen Pakets benutzt werden). Diese werden aber <strong>nicht</strong> in den globalen <em>workspace</em> geladen, überschreiben also dort keine Funktionen/Variablen.

@@ -1353,6 +1353,11 @@ opacity: 0;
 }
 @media print {
 
+@page {
+size: landscape;
+margin: 0;
+}
+
 slides slide {
 display: block !important;
 position: relative;
@@ -3100,6 +3105,13 @@ slide:not(.current) .plotly.html-widget{
   display: block;
 }
 
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+            
   </style>
 
   <style type="text/css">pre {
@@ -3152,7 +3164,7 @@ color: white;
         <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
     <hgroup class="auto-fadein">
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
-      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      
       <p data-config-presenter><!-- populated from slide_config.json --></p>
           </hgroup>
   </slide>
@@ -3207,7 +3219,7 @@ color: white;
 
 </article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2><code>devtools</code> &amp; Friends: Welcome to the Hadleyverse</h2></hgroup><article  id="devtools-friends-welcome-to-the-hadleyverse">
 
-<img src='http://hadley.nz/hadley-wickham.jpg' title=''/>
+<p><img src = "http://hadley.nz/hadley-wickham.jpg" height = "250" align="right" /></p>
 
 </article></slide><slide class=""><hgroup><h2>Wickham School of Package Development</h2></hgroup><article  id="wickham-school-of-package-development">
 
@@ -3319,7 +3331,7 @@ color: white;
 <li><code>library(&quot;pkg&quot;)</code> durchsucht Pfade in <code>.libPaths()</code> nach Verzeichnis <code>pkg</code></li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>Details / Weiterführendes</h2></hgroup><article  id="details-weiterfuhrendes">
+</article></slide><slide class=""><hgroup><h2>Details / Weiterführendes</h2></hgroup><article  id="details-weiterführendes">
 
 <p>Offizielle Standards des R-Core Teams:<br/><a href='http://cran.r-project.org/doc/manuals/R-exts.html' title=''>Writing R extensions</a></p>
 
