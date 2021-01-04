@@ -99,15 +99,15 @@ Objektorientierte Programmierung: S3 & S4
 
 ## Woche 11 (25.01. - 31.01.)
 
-Objektorientierte Programmierung: R6
-
-[Material](week14.html)
-
-## Woche 12 (01.02. - 07.02)
-
 Paketentwicklung: `devtools`, `roxygen2` & Co
 
 [Material](week1112.html)
+
+## Woche 12 (01.02. - 07.02)
+
+Objektorientierte Programmierung: R6
+
+[Material](week14.html)
 
 ## Woche 13 (08.02. - 12.02.)
 
